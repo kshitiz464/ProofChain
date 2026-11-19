@@ -1,0 +1,98 @@
+{
+  "measuredAt": "2026-11-03T18:41:47.550Z",
+  "network": "hardhat",
+  "chainId": 31337,
+  "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "runId": "94e2f1eb-6544-4c34-8669-e9b8cfb20ef2",
+  "initialAnchors": 0,
+  "deployment": {
+    "txHash": "0xec2c9aba7f05f5df4b9d122abeffdd7ad257b33668a845ed641f989fee4eed32",
+    "blockNumber": 1,
+    "gasUsed": "266430",
+    "effectiveGasPriceWei": "1875000000",
+    "feeWei": "499556250000000",
+    "confirmationMs": 11
+  },
+  "attempted": 5,
+  "anchors": [
+    {
+      "cid": "bafkreie7p6lvws2wysy3o5iqllbbi7w6cmyg6sdt4jhijn2mwuru7mmh7i",
+      "txHash": "0xe4aee67afbea27b4bb351987cf3ddab408939e54ef225742ebc5714306f7a1a5",
+      "blockNumber": 2,
+      "gasUsed": "114523",
+      "effectiveGasPriceWei": "1766596360",
+      "feeWei": "202315914936280",
+      "confirmationMs": 8
+    },
+    {
+      "cid": "bafkreia2saexwvzic7za6ijxonojbjskzxtswsucgn4h2qpxexyg2pbhiu",
+      "txHash": "0x6f1ad217a3fd04d414d149c3867373a52c225e7152d62f383e4a7233ba670b21",
+      "blockNumber": 3,
+      "gasUsed": "97423",
+      "effectiveGasPriceWei": "1671137619",
+      "feeWei": "162807240255837",
+      "confirmationMs": 5
+    },
+    {
+      "cid": "bafkreifigc3wvbuoqxs3chmlwayavvduunrqz5xjzjwc4kc5vnd74ijd34",
+      "txHash": "0xe64726fbe1f6328621144a5cabf4b88b4db3fbab5d63dd6b71e91087f1957da6",
+      "blockNumber": 4,
+      "gasUsed": "97423",
+      "effectiveGasPriceWei": "1587517851",
+      "feeWei": "154660751597973",
+      "confirmationMs": 4
+    },
+    {
+      "cid": "bafkreiazx2y4yddxqbc7eft3tpqmpipfhl5n3p3mlo7ojytg42xit2bj4q",
+      "txHash": "0xc45815e986b59c697794ba94ada910a595c29e48c0c6d268a0f7761287148c7d",
+      "blockNumber": 5,
+      "gasUsed": "97423",
+      "effectiveGasPriceWei": "1514316611",
+      "feeWei": "147529267193453",
+      "confirmationMs": 5
+    },
+    {
+      "cid": "bafkreidw2idfw34ov74twaiah5j6sk6zafjdskunglabenctzroidzyzgm",
+      "txHash": "0x8a229343607a0dd11252bc225cca731ceb3b290d53d0b4758aa29f214e5e9e61",
+      "blockNumber": 6,
+      "gasUsed": "97423",
+      "effectiveGasPriceWei": "1450235811",
+      "feeWei": "141286323415053",
+      "confirmationMs": 4
+    }
+  ],
+  "failures": [],
+  "verification": [
+    {
+      "cid": "bafkreie7p6lvws2wysy3o5iqllbbi7w6cmyg6sdt4jhijn2mwuru7mmh7i",
+      "exists": true,
+      "correctSigner": true,
+      "latencyMs": 3
+    },
+    {
+      "cid": "bafkreia2saexwvzic7za6ijxonojbjskzxtswsucgn4h2qpxexyg2pbhiu",
+      "exists": true,
+      "correctSigner": true,
+      "latencyMs": 2
+    },
+    {
+      "cid": "bafkreifigc3wvbuoqxs3chmlwayavvduunrqz5xjzjwc4kc5vnd74ijd34",
+      "exists": true,
+      "correctSigner": true,
+      "latencyMs": 2
+    },
+    {
+      "cid": "bafkreiazx2y4yddxqbc7eft3tpqmpipfhl5n3p3mlo7ojytg42xit2bj4q",
+      "exists": true,
+      "correctSigner": true,
+      "latencyMs": 2
+    },
+    {
+      "cid": "bafkreidw2idfw34ov74twaiah5j6sk6zafjdskunglabenctzroidzyzgm",
+      "exists": true,
+      "correctSigner": true,
+      "latencyMs": 7
+    }
+  ],
+  "unknownCidVerified": false
+}

@@ -1,0 +1,86 @@
+================================================================================
+        INTELLECTUAL PROPERTY REGISTRATION NOTICE — DOCUMENT #2 OF 5
+================================================================================
+
+REGISTRATION NO:  IP-2026-ECA-CS-007
+FILING DATE:      02 September 2026
+INSTITUTION:      Engineering College, Ajmer
+DEPARTMENT:       Computer Science & Engineering
+
+--------------------------------------------------------------------------------
+TITLE OF WORK
+--------------------------------------------------------------------------------
+
+"ProofChain: Decentralized Document Verification System using
+ IPFS and Blockchain Timestamping"
+
+--------------------------------------------------------------------------------
+NATURE OF WORK
+--------------------------------------------------------------------------------
+
+Software System / Web Application / Research Prototype
+
+This Intellectual Property Registration Notice establishes that the software
+system described herein was conceived, designed, and implemented by the
+undersigned team members during the academic year 2025–2026 as their Final
+Year Engineering Project under the B.Tech (Computer Science & Engineering)
+program at Engineering College, Ajmer.
+
+--------------------------------------------------------------------------------
+CREATORS & CONTRIBUTORS
+--------------------------------------------------------------------------------
+
+  PRIMARY CONTRIBUTORS:
+
+  1. Khushi Jangid
+     Roll No.: 23CS50
+     Contribution: Smart Contract Design, IPFS Integration, Testing
+
+  2. Kshitiz Yadav
+     Roll No.: 23CS53
+     Contribution: Backend API Development, System Architecture, Deployment
+
+  3. Kunal Upadhyay
+     Roll No.: 23CS55
+     Contribution: Frontend Development, UI/UX Design, Documentation
+
+  SUPERVISOR:
+     Mr. Harji Ram Choudhary
+     Assistant Professor, CS&E Department
+     Engineering College, Ajmer
+
+--------------------------------------------------------------------------------
+DESCRIPTION OF THE WORK
+--------------------------------------------------------------------------------
+
+ProofChain is an original software system that enables users to upload
+documents, anchor their cryptographic fingerprints (IPFS CIDs) on a public
+blockchain, and retrieve tamper-evident proofs of authorship and timestamp.
+
+The system is novel in the following ways:
+  (a) It combines IPFS content-addressing with on-chain CID anchoring in a
+      single unified pipeline, reducing user effort compared to standalone
+      timestamping services.
+  (b) The verification flow allows any third party to independently confirm
+      a document's proof without trusting the ProofChain platform itself.
+  (c) A MongoDB metadata layer separates searchable convenience data from the
+      immutable on-chain proof, without compromising the integrity guarantee.
+
+--------------------------------------------------------------------------------
+DECLARATION
+--------------------------------------------------------------------------------
+
+We, the undersigned, hereby declare that the work described above is original,
+has not been submitted elsewhere for any award, and all third-party references
+are properly cited in the accompanying project report.
+
+  Khushi Jangid    _______________________    Date: 02/09/2026
+  Kshitiz Yadav    _______________________    Date: 02/09/2026
+  Kunal Upadhyay   _______________________    Date: 02/09/2026
+
+Verified by Supervisor:
+  Mr. Harji Ram Choudhary  _______________________    Date: 02/09/2026
+
+================================================================================
+This document is anchored on ProofChain as proof of original authorship.
+================================================================================

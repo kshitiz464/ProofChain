@@ -1,0 +1,61 @@
+================================================================================
+        RESEARCH PAPER ABSTRACT — DOCUMENT #1 OF 5
+================================================================================
+
+TITLE:   ProofChain: A Hybrid IPFS–Blockchain Architecture for
+         Cryptographically Verifiable Document Existence Proofs
+
+AUTHORS: Khushi Jangid, Kshitiz Yadav, Kunal Upadhyay
+         Department of Computer Science & Engineering
+         Engineering College, Ajmer (Autonomous Institution, Govt. of Rajasthan)
+
+DATE:    September 2026
+VERSION: 1.0 (Original Submission)
+
+--------------------------------------------------------------------------------
+ABSTRACT
+--------------------------------------------------------------------------------
+
+Centralized document storage platforms (e.g., Google Drive, Dropbox) provide
+convenience-level version history that is entirely controlled by the hosting
+platform. A third party verifying a document's authenticity via such services
+must unconditionally trust that platform's internal logs — an inherently
+unauditable process.
+
+This paper presents ProofChain, a system that combines content-addressed
+distributed storage (IPFS) with Ethereum smart-contract timestamping to provide
+portable, third-party-verifiable proof of document existence. Uploaded documents
+are pinned to IPFS via Pinata to produce a Content Identifier (CID) — a
+cryptographic hash of the document content. The CID is then anchored on a
+Solidity smart contract along with the uploader's Ethereum address and the
+block timestamp, creating an immutable, on-chain record.
+
+A MongoDB metadata layer enables fast search by filename and uploader address,
+separating the mutable convenience layer from the immutable on-chain proof.
+A React/Ethers.js frontend provides a three-panel interface: Upload, History,
+and Verify — the last of which allows any party to independently confirm a
+document's authorship and timestamp without trusting the ProofChain platform
+itself.
+
+Evaluation demonstrates: (a) successful IPFS pin reliability across two
+geographic regions (FRA1, NYC1); (b) constant-cost Solidity anchor transactions
+averaging 47,832 gas units; and (c) sub-second verification latency for
+already-pinned CIDs.
+
+--------------------------------------------------------------------------------
+KEYWORDS
+--------------------------------------------------------------------------------
+
+Blockchain Timestamping, IPFS, Content Identifiers, Proof of Existence,
+Decentralised Storage, Solidity, Smart Contracts, Document Verification
+
+--------------------------------------------------------------------------------
+DOCUMENT HASH INFO
+--------------------------------------------------------------------------------
+
+This document is submitted to ProofChain for timestamp anchoring.
+Once uploaded, its IPFS CID and blockchain transaction hash serve as
+immutable proof that this exact content existed at the time of anchoring.
+
+COPYRIGHT (c) 2026 — Khushi Jangid, Kshitiz Yadav, Kunal Upadhyay
+================================================================================

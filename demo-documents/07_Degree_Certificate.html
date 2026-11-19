@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ProofChain — Degree Certificate</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a2e; font-family: 'Cormorant Garamond', serif; display: flex; justify-content: center; padding: 40px 20px; }
+
+  .certificate {
+    width: 794px;
+    background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
+    border: 1px solid rgba(212,175,55,0.4);
+    box-shadow: 0 0 0 1px rgba(212,175,55,0.2), 0 0 60px rgba(0,0,0,0.8);
+    padding: 56px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative glow circles */
+  .glow { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+  .glow.g1 { width: 400px; height: 400px; background: rgba(100,180,255,0.06); top: -100px; right: -100px; }
+  .glow.g2 { width: 300px; height: 300px; background: rgba(212,175,55,0.05); bottom: -80px; left: -80px; }
+
+  /* Corner ornaments */
+  .ornament { position: absolute; font-size: 28px; color: rgba(212,175,55,0.4); }
+  .ornament.tl { top: 18px; left: 22px; } .ornament.tr { top: 18px; right: 22px; }
+  .ornament.bl { bottom: 18px; left: 22px; } .ornament.br { bottom: 18px; right: 22px; }
+
+  .header { text-align: center; margin-bottom: 28px; position: relative; }
+  .crest { font-size: 52px; margin-bottom: 10px; filter: drop-shadow(0 0 12px rgba(212,175,55,0.5)); }
+  .uni-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #d4af37; letter-spacing: 1px; }
+  .uni-sub  { font-size: 11px; letter-spacing: 3px; color: rgba(212,175,55,0.7); text-transform: uppercase; margin-top: 4px; }
+  .uni-est  { font-size: 10px; color: rgba(255,255,255,0.4); margin-top: 4px; letter-spacing: 2px; }
+
+  .gold-rule { height: 1px; background: linear-gradient(90deg, transparent, #d4af37, transparent); margin: 18px 0; }
+  .gold-rule.thick { height: 2px; }
+
+  .degree-title { font-family: 'Playfair Display', serif; font-size: 34px; color: #ffffff; text-align: center; margin: 20px 0 4px; }
+  .degree-of { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: rgba(212,175,55,0.8); text-align: center; margin-bottom: 20px; }
+
+  .presented-to { font-size: 13px; color: rgba(255,255,255,0.6); text-align: center; letter-spacing: 2px; text-transform: uppercase; }
+  .recipient-name { font-family: 'Playfair Display', serif; font-size: 42px; font-style: italic; color: #d4af37; text-align: center; margin: 8px 0; text-shadow: 0 0 30px rgba(212,175,55,0.4); }
+  .recipient-detail { font-size: 13px; color: rgba(255,255,255,0.6); text-align: center; font-style: italic; }
+
+  .body-text {
+    font-size: 14px; line-height: 1.9; color: rgba(255,255,255,0.75);
+    text-align: center; margin: 22px 0; padding: 0 20px;
+  }
+  .body-text strong { color: #d4af37; }
+
+  .honours-box {
+    border: 1px solid rgba(212,175,55,0.3);
+    background: rgba(212,175,55,0.05);
+    border-radius: 4px; padding: 18px 28px; margin: 20px 0; text-align: center;
+  }
+  .honours-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: rgba(212,175,55,0.6); margin-bottom: 8px; }
+  .honours-value { font-family: 'Playfair Display', serif; font-size: 20px; color: #d4af37; }
+  .honours-sub   { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+
+  .seal-row { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 36px; }
+  .sig-block { text-align: center; }
+  .sig-line { border-top: 1px solid rgba(212,175,55,0.5); width: 160px; margin: 0 auto 8px; padding-top: 8px; }
+  .sig-name  { font-size: 13px; color: #d4af37; font-weight: 600; }
+  .sig-title { font-size: 11px; color: rgba(255,255,255,0.5); font-style: italic; margin-top: 2px; }
+
+  .seal-circle {
+    width: 90px; height: 90px; border-radius: 50%;
+    border: 2px solid rgba(212,175,55,0.6);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(212,175,55,0.08);
+    box-shadow: 0 0 20px rgba(212,175,55,0.2);
+  }
+  .seal-circle-text { font-size: 7px; letter-spacing: 1px; color: rgba(212,175,55,0.8); text-transform: uppercase; text-align: center; line-height: 1.8; }
+  .seal-circle-year { font-size: 15px; color: #d4af37; font-weight: bold; }
+
+  .date-row { text-align: center; margin: 20px 0 8px; font-size: 13px; color: rgba(255,255,255,0.5); font-style: italic; }
+
+  .proofchain-badge {
+    margin-top: 24px; padding-top: 16px;
+    border-top: 1px solid rgba(212,175,55,0.2);
+    display: flex; align-items: center; gap: 12px;
+    font-size: 11px; color: rgba(212,175,55,0.7);
+  }
+  .badge-icon { font-size: 18px; }
+  .badge-text strong { display: block; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #d4af37; }
+</style>
+</head>
+<body>
+<div class="certificate">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="ornament tl">✦</div><div class="ornament tr">✦</div>
+  <div class="ornament bl">✦</div><div class="ornament br">✦</div>
+
+  <div class="header">
+    <div class="crest">🎓</div>
+    <div class="uni-name">Rajasthan Technical University</div>
+    <div class="uni-sub">Kota, Rajasthan, India</div>
+    <div class="uni-est">Established by Govt. of Rajasthan Act No. 26 of 2006</div>
+  </div>
+
+  <div class="gold-rule thick"></div>
+  <div class="gold-rule" style="margin-top: -14px; opacity: 0.4;"></div>
+
+  <div class="degree-title">Bachelor of Technology</div>
+  <div class="degree-of">in Computer Science &amp; Engineering</div>
+
+  <div class="presented-to">This is to certify that</div>
+  <div class="recipient-name">Kshitiz Yadav</div>
+  <div class="recipient-detail">Enrollment No. 21ECECS053 &nbsp;|&nbsp; Engineering College, Ajmer</div>
+
+  <p class="body-text">
+    having successfully fulfilled all the requirements of the curriculum as prescribed
+    by <strong>Rajasthan Technical University, Kota</strong>, for the degree of
+    <strong>Bachelor of Technology in Computer Science & Engineering</strong>,
+    is hereby awarded this degree with all the rights, privileges, and
+    responsibilities thereunto appertaining.
+  </p>
+
+  <div class="honours-box">
+    <div class="honours-label">Academic Achievement</div>
+    <div class="honours-value">First Division with Distinction</div>
+    <div class="honours-sub">CGPA: 8.74 / 10.00 &nbsp;|&nbsp; Batch: 2021 – 2025</div>
+  </div>
+
+  <div class="date-row">Given under the seal of the University on the 2nd day of September, 2026</div>
+
+  <div class="seal-row">
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div class="sig-name">Prof. R.K. Bansal</div>
+      <div class="sig-title">Principal<br>Engineering College, Ajmer</div>
+    </div>
+
+    <div class="seal-circle">
+      <div class="seal-circle-text">RTU</div>
+      <div class="seal-circle-year">2026</div>
+      <div class="seal-circle-text">Kota</div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div class="sig-name">Vice Chancellor</div>
+      <div class="sig-title">Rajasthan Technical University<br>Kota</div>
+    </div>
+  </div>
+
+  <div class="proofchain-badge">
+    <span class="badge-icon">⛓</span>
+    <div class="badge-text">
+      <strong>Anchored on ProofChain</strong>
+      This degree certificate is blockchain-timestamped. Verify at http://localhost:5173 → Verify Tab.
+      No authority can revoke or backdate this cryptographic proof.
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+================================================================================
+          PLAGIARISM-FREE DECLARATION & ORIGINALITY REPORT — DOCUMENT #5 OF 5
+================================================================================
+
+INSTITUTION:   Engineering College, Ajmer
+DEPARTMENT:    Computer Science & Engineering
+DATE:          02 September 2026
+REPORT ID:     PFD-2026-ECA-CS-007
+
+================================================================================
+                         PLAGIARISM-FREE DECLARATION
+================================================================================
+
+We, the undersigned, declare that the project titled:
+
+   "ProofChain: Decentralized Document Verification Using
+    IPFS and Blockchain Timestamping"
+
+submitted as our B.Tech Final Year Project is an original work produced by us.
+
+  • No part of this project has been copied from any published or unpublished
+    source without proper citation and acknowledgement.
+
+  • All code written for this project is original unless explicitly attributed
+    to a third-party library or reference implementation.
+
+  • The project has not been submitted, in whole or in part, to any other
+    institution or examination body for any other degree or award.
+
+  • All data, results, and analysis presented in the project report are genuine
+    and have not been fabricated or falsified.
+
+--------------------------------------------------------------------------------
+ORIGINALITY SCAN RESULTS
+--------------------------------------------------------------------------------
+
+  Software Used:    Turnitin Academic Integrity Tools
+  Scan Date:        02 September 2026
+  Similarity Index: 7%  (Acceptable — below 15% threshold)
+
+  Breakdown:
+    Internet Sources:    4%   (citations, API documentation references)
+    Publications:        2%   (cited papers properly referenced)
+    Student Papers:      1%   (common terminology in field)
+    Own Work:           93%   (ORIGINAL)
+
+  Verdict: ✅ PASSES PLAGIARISM CHECK — ORIGINAL WORK CONFIRMED
+
+--------------------------------------------------------------------------------
+SOURCE CODE ORIGINALITY
+--------------------------------------------------------------------------------
+
+  Tool Used: GitHub Copilot Detection API + Manual Review
+  Smart Contract (ProofChain.sol):   100% Original
+  Backend API (Node.js/Express):      96% Original
+  Frontend (React):                   98% Original
+  Overall Codebase:                   97% Original
+
+--------------------------------------------------------------------------------
+STUDENT DECLARATIONS
+--------------------------------------------------------------------------------
+
+I hereby affirm that the above declaration is true and accurate:
+
+  1. Khushi Jangid (23CS50)
+     Signature: ____________________    Date: 02/09/2026
+
+  2. Kshitiz Yadav (23CS53)
+     Signature: ____________________    Date: 02/09/2026
+
+  3. Kunal Upadhyay (23CS55)
+     Signature: ____________________    Date: 02/09/2026
+
+--------------------------------------------------------------------------------
+SUPERVISOR VERIFICATION
+--------------------------------------------------------------------------------
+
+I have reviewed the above declaration and confirm the originality of the work:
+
+  Mr. Harji Ram Choudhary
+  Assistant Professor, CS&E Department
+  Engineering College, Ajmer
+
+  Signature: ____________________    Date: 02/09/2026
+
+================================================================================
+  PURPOSE OF ANCHORING ON PROOFCHAIN:
+  This declaration is anchored on the blockchain so that any future claim of
+  plagiarism can be independently refuted by presenting:
+    (a) This document
+    (b) Its IPFS CID
+    (c) The blockchain transaction timestamp
+  — proving the work existed in this form BEFORE any later submission.
+================================================================================

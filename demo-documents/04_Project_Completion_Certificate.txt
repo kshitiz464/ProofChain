@@ -1,0 +1,78 @@
+================================================================================
+          CERTIFICATE OF PROJECT COMPLETION — DOCUMENT #4 OF 5
+================================================================================
+
+                     ENGINEERING COLLEGE, AJMER
+               (An Autonomous Institution of Govt. of Rajasthan)
+               Department of Computer Science & Engineering
+
+                    ★ ★ ★  CERTIFICATE  ★ ★ ★
+
+================================================================================
+
+This is to certify that the following students of the B.Tech (Computer Science
+& Engineering) program, Batch 2023–2027, have successfully completed their
+Final Year Project titled:
+
+        "ProofChain: Decentralized Document Verification
+         Using IPFS and Blockchain Timestamping"
+
+during the academic session 2025–2026, under the supervision of
+Mr. Harji Ram Choudhary, Assistant Professor, CS&E Department.
+
+--------------------------------------------------------------------------------
+STUDENTS
+--------------------------------------------------------------------------------
+
+  ┌────────────────────────────┬──────────┬──────────────────────────┐
+  │ Name                       │ Roll No. │ Grade                    │
+  ├────────────────────────────┼──────────┼──────────────────────────┤
+  │ Khushi Jangid              │ 23CS50   │ Outstanding (A+)         │
+  │ Kshitiz Yadav              │ 23CS53   │ Outstanding (A+)         │
+  │ Kunal Upadhyay             │ 23CS55   │ Outstanding (A+)         │
+  └────────────────────────────┴──────────┴──────────────────────────┘
+
+--------------------------------------------------------------------------------
+PROJECT EVALUATION SUMMARY
+--------------------------------------------------------------------------------
+
+  Category                     Score      Remarks
+  ─────────────────────────────────────────────────────────────────────────
+  Problem Statement & Novelty   18 / 20   Highly relevant, real-world impact
+  Technical Implementation      38 / 40   Complete, working prototype
+  Code Quality & Testing        17 / 20   11/11 unit tests, clean architecture
+  Documentation & Report        14 / 15   Comprehensive, well-structured
+  Viva & Presentation            5 /  5   Excellent demonstration
+  ─────────────────────────────────────────────────────────────────────────
+  TOTAL                         92 / 100  DISTINCTION
+
+--------------------------------------------------------------------------------
+KEY ACHIEVEMENTS
+--------------------------------------------------------------------------------
+
+  ✓ Smart contract deployed on Ethereum-compatible testnet
+  ✓ Full IPFS integration via Pinata pinning service
+  ✓ End-to-end pipeline: Upload → IPFS → Blockchain → MongoDB → Verify
+  ✓ 11 automated unit tests — all passing
+  ✓ Premium React frontend with MetaMask wallet integration
+  ✓ Publicly verifiable proof of existence without trusting any central party
+
+--------------------------------------------------------------------------------
+SIGNATURES
+--------------------------------------------------------------------------------
+
+  Project Supervisor                 Head of Department
+  Mr. Harji Ram Choudhary            Dr. ____________________
+  Assistant Professor, CS&E          Professor & HOD, CS&E
+  Date: 02/09/2026                   Date: 02/09/2026
+
+
+  Principal / Director
+  ____________________
+  Engineering College, Ajmer
+  Date: 02/09/2026
+
+================================================================================
+  This certificate is anchored on ProofChain as tamper-evident proof.
+  Verify at: http://localhost:5173 → Verify Tab → Upload this file
+================================================================================

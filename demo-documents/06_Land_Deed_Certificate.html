@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ProofChain — Land Deed Certificate</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f5f0e8; font-family: 'Lora', serif; display: flex; justify-content: center; padding: 40px 20px; }
+
+  .certificate {
+    width: 794px;
+    background: #fffdf7;
+    border: 3px solid #8B6914;
+    box-shadow: 0 0 0 8px #f5f0e8, 0 0 0 12px #8B6914, 0 0 40px rgba(0,0,0,0.3);
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .watermark {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%) rotate(-30deg);
+    font-size: 80px; font-weight: bold; color: rgba(139,105,20,0.06);
+    font-family: 'Cinzel', serif; white-space: nowrap; pointer-events: none;
+  }
+
+  .corner { position: absolute; width: 60px; height: 60px; }
+  .corner.tl { top: 15px; left: 15px; border-top: 3px solid #8B6914; border-left: 3px solid #8B6914; }
+  .corner.tr { top: 15px; right: 15px; border-top: 3px solid #8B6914; border-right: 3px solid #8B6914; }
+  .corner.bl { bottom: 15px; left: 15px; border-bottom: 3px solid #8B6914; border-left: 3px solid #8B6914; }
+  .corner.br { bottom: 15px; right: 15px; border-bottom: 3px solid #8B6914; border-right: 3px solid #8B6914; }
+
+  .header { text-align: center; margin-bottom: 30px; }
+  .emblem { font-size: 48px; margin-bottom: 8px; }
+  .govt-name { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: #5a4a1a; text-transform: uppercase; }
+  .dept-name { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2px; color: #8B6914; margin-top: 4px; }
+
+  .divider { border: none; border-top: 1px solid #8B6914; margin: 16px 0; }
+  .divider.double { border-bottom: 1px solid #8B6914; padding-bottom: 5px; }
+
+  .title { font-family: 'Cinzel', serif; font-size: 28px; font-weight: 700; color: #3d2b00; text-align: center; margin: 20px 0 8px; }
+  .subtitle { text-align: center; font-size: 13px; color: #6b5020; letter-spacing: 2px; text-transform: uppercase; font-family: 'Cinzel', serif; }
+  .doc-no { text-align: center; font-size: 11px; color: #8B6914; margin-top: 6px; font-style: italic; }
+
+  .body-text { font-size: 13.5px; line-height: 2; color: #2c1f00; margin: 24px 0; text-align: justify; }
+  .body-text strong { color: #3d2b00; font-weight: 600; }
+
+  .property-box {
+    border: 1px solid #c9a227; background: #fdf8ec;
+    padding: 20px 28px; margin: 20px 0; border-radius: 2px;
+  }
+  .property-box h3 { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; color: #8B6914; text-transform: uppercase; margin-bottom: 14px; }
+  .prop-row { display: flex; margin-bottom: 8px; font-size: 13px; }
+  .prop-label { color: #6b5020; min-width: 160px; font-style: italic; }
+  .prop-value { color: #2c1f00; font-weight: 600; }
+
+  .seal-row { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 40px; }
+  .sig-block { text-align: center; }
+  .sig-line { border-top: 1px solid #3d2b00; width: 180px; margin: 0 auto 6px; padding-top: 6px; }
+  .sig-name { font-family: 'Cinzel', serif; font-size: 12px; font-weight: 700; color: #3d2b00; }
+  .sig-title { font-size: 11px; color: #6b5020; font-style: italic; }
+
+  .seal {
+    width: 100px; height: 100px; border-radius: 50%;
+    border: 3px solid #8B6914; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    background: radial-gradient(circle, #fdf8ec, #f0e5c0);
+    box-shadow: inset 0 0 10px rgba(139,105,20,0.3), 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .seal-text { font-family: 'Cinzel', serif; font-size: 7px; letter-spacing: 1px; color: #8B6914; line-height: 1.6; }
+  .seal-year { font-size: 14px; font-weight: bold; color: #5a4a1a; }
+
+  .proofchain-badge {
+    margin-top: 28px; border-top: 1px dashed #c9a227; padding-top: 16px;
+    display: flex; align-items: center; gap: 12px; font-size: 11px; color: #8B6914;
+  }
+  .badge-icon { font-size: 20px; }
+  .badge-text strong { display: block; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #5a4a1a; }
+</style>
+</head>
+<body>
+<div class="certificate">
+  <div class="watermark">LAND DEED</div>
+  <div class="corner tl"></div><div class="corner tr"></div>
+  <div class="corner bl"></div><div class="corner br"></div>
+
+  <div class="header">
+    <div class="emblem">⚖️</div>
+    <div class="govt-name">Government of Rajasthan</div>
+    <div class="dept-name">Department of Revenue & Land Records</div>
+  </div>
+
+  <hr class="divider double">
+
+  <div class="title">SALE DEED CERTIFICATE</div>
+  <div class="subtitle">Registered Land Transfer Document</div>
+  <div class="doc-no">Registration No: RAJ/AJM/2026/SD/004782 &nbsp;|&nbsp; Registered: 02 September 2026</div>
+
+  <hr class="divider" style="margin: 20px 0;">
+
+  <p class="body-text">
+    This deed of sale is made and executed on the <strong>2nd day of September, Two Thousand Twenty-Six</strong>,
+    by and between <strong>Shri Ramesh Kumar Sharma</strong>, S/O Late Shri Mohan Lal Sharma,
+    resident of House No. 47, Civil Lines, Ajmer, Rajasthan — 305001 (hereinafter referred to as the <em>"Seller"</em>),
+    <br><br>
+    AND<br><br>
+    <strong>Kshitiz Yadav</strong>, S/O Shri Vinod Yadav, resident of Flat No. 302, Shiv Vihar Colony,
+    Pushkar Road, Ajmer, Rajasthan — 305004 (hereinafter referred to as the <em>"Purchaser"</em>).
+  </p>
+
+  <div class="property-box">
+    <h3>Property Details</h3>
+    <div class="prop-row"><span class="prop-label">Survey / Khasra No.:</span><span class="prop-value">2847/B, Tehsil Ajmer</span></div>
+    <div class="prop-row"><span class="prop-label">Plot Area:</span><span class="prop-value">250 Sq. Yards (208.9 Sq. Mtrs.)</span></div>
+    <div class="prop-row"><span class="prop-label">Location:</span><span class="prop-value">Sector 7, Shastri Nagar, Ajmer</span></div>
+    <div class="prop-row"><span class="prop-label">District:</span><span class="prop-value">Ajmer, Rajasthan — 305006</span></div>
+    <div class="prop-row"><span class="prop-label">Sale Consideration:</span><span class="prop-value">₹ 38,50,000/- (Thirty-Eight Lakhs Fifty Thousand)</span></div>
+    <div class="prop-row"><span class="prop-label">Stamp Duty Paid:</span><span class="prop-value">₹ 2,31,000/- (Challan No. AJM-2026-SD-8812)</span></div>
+  </div>
+
+  <div class="seal-row">
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div class="sig-name">Ramesh Kumar Sharma</div>
+      <div class="sig-title">Seller / Transferor</div>
+    </div>
+
+    <div class="seal">
+      <div class="seal-text">REGISTRAR<br>OFFICE</div>
+      <div class="seal-year">2026</div>
+      <div class="seal-text">AJMER</div>
+    </div>
+
+    <div class="sig-block">
+      <div class="sig-line"></div>
+      <div class="sig-name">Sub-Registrar, Ajmer</div>
+      <div class="sig-title">Registering Authority</div>
+    </div>
+  </div>
+
+  <div class="proofchain-badge">
+    <span class="badge-icon">⛓</span>
+    <div class="badge-text">
+      <strong>ProofChain Verified</strong>
+      This document has been anchored on the blockchain via ProofChain.
+      Verify its authenticity at http://localhost:5173 → Verify Tab.
+    </div>
+  </div>
+</div>
+</body>
+</html>
